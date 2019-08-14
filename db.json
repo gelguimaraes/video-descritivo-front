@@ -1,0 +1,120 @@
+{
+  "videos": [
+    "video1",
+    {
+      "id": 1,
+      "enquete": {
+        "alternativas": [
+          "alternativa1",
+          {
+            "id": 1,
+            "descricao": "descricao alternativa 1 video 1",
+            "votos": 3
+          },
+          "alternativa2",
+          {
+            "id": 2,
+            "descricao": "descricao alternativa 2 video 1",
+            "votos": 1
+          },
+          "alternativa3",
+          {
+            "id": 3,
+            "descricao": "descricao alternativa 3 video 1",
+            "votos": 4
+          }
+        ],
+        "pergunta": "pergunta da enquete video 1",
+        "tempoInicial": "4:00"
+      },
+      "marcacoes": [
+        "marcacao1",
+        {
+          "id": 1,
+          "descricao": "Descricao da marcacao 1 video 1",
+          "tempoFinal": "0:10",
+          "tempoInicial": "0:50",
+          "titulo": "Titulo marcacao 1"
+        },
+        "marcacao2",
+        {
+          "id": 2,
+          "descricao": "Descricao da marcacao 2 video 1",
+          "tempoFinal": "1:45",
+          "tempoInicial": "1:20",
+          "titulo": "Titulo marcacao 2"
+        },
+        "marcacao3",
+        {
+          "id": 3,
+          "descricao": "Descricao da marcacao 3 video 1",
+          "tempoFinal": "3:10",
+          "tempoInicial": "2:00",
+          "titulo": "Titulo marcacao 3"
+        }
+      ],
+      "path": "video1.mp4",
+      "tempoTotal": "5:00",
+      "thumb": "thumbvideo1.jpg",
+      "titulo": "titulo do video 1"
+    },
+    "video2",
+    {
+      "id": 2,
+      "enquete": {
+        "alternativas": [
+          "alternativa1",
+          {
+            "id": 1,
+            "descricao": "descricao alternativa 1 video 2",
+            "votos": 3
+          },
+          "alternativa2",
+          {
+            "id": 2,
+            "descricao": "descricao alternativa 2 video 2",
+            "votos": 1
+          },
+          "alternativa3",
+          {
+            "id": 3,
+            "descricao": "descricao alternativa 3 video 2",
+            "votos": 4
+          }
+        ],
+        "pergunta": "pergunta da enquete video 2",
+        "tempoInicial": "5:00"
+      },
+      "marcacoes": [
+        "marcacao1",
+        {
+          "id": 1,
+          "descricao": "Descricao da marcacao 1 video 2",
+          "tempoFinal": "0:10",
+          "tempoInicial": "0:50",
+          "titulo": "Titulo marcacao 1"
+        },
+        "marcacao2",
+        {
+          "id": 2,
+          "descricao": "Descricao da marcacao 2 video 2",
+          "tempoFinal": "1:45",
+          "tempoInicial": "1:20",
+          "titulo": "Titulo marcacao 2"
+        },
+        "marcacao3",
+        {
+          "id": 3,
+          "descricao": "Descricao da marcacao 3 video 2",
+          "tempoFinal": "3:10",
+          "tempoInicial": "2:00",
+          "titulo": "Titulo marcacao 3"
+        }
+      ],
+      "path": "video2.mp4",
+      "tempoTotal": "6:00",
+      "thumb": "thumbvideo2.jpg",
+      "titulo": "titulo do video 2"
+    }
+  ]
+}
