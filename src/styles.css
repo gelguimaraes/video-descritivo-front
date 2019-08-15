@@ -10,20 +10,32 @@
   display: grid;
   grid-template-columns: 25% 75%
 }
+
+h1{
+  text-align: center;
+  margin: 0 auto;
+  padding: 25px;
+}
+.top{
+  height: 10vh;
+  display: inline-block;
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
 .listVideos{
-  height: 100vh;
+  height: 90vh;
   background-color: #ccc;
   display: inline-block;
   grid-column: 1/2;
-  grid-row: 1/3;
+  grid-row: 2/4;
 
 }
 .boxVideo{
-  height: 50vh;
+  height: 40vh;
   display: inline-block;
   background-color: #8095cc;
   grid-column: 2/3;
-  grid-row: 1/2;
+  grid-row: 2/3;
 }
 
 .descriptionVideo{
@@ -31,5 +43,5 @@
   height: 50vh;
   display: inline-block;
   grid-column: 2/3;
-  grid-row: 2/3;
+  grid-row: 3/4;
 }

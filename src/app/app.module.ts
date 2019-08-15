@@ -3,18 +3,22 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatVideoModule } from 'mat-video';
 
-import { AppComponent } from './app.component';
+import {AppComponent} from './app.component';
+import {HttpModule} from '@angular/http';
+import {ConfigService} from './services/config.service';
+import {VideoService} from './services/video.service';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MatVideoModule
+    MatVideoModule,
+    HttpModule,
   ],
-  providers: [],
+  providers: [ConfigService, VideoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
