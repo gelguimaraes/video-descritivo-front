@@ -1,0 +1,17 @@
+<mat-accordion>
+  <ng-container *ngFor="let video of videos | async; index as i">
+    <mat-expansion-panel [expanded]="step === i" (opened)="setStep(i)" hideToggle>
+      <mat-expansion-panel-header *ngIf="video.titulo" routerLink="/videos/{{video.id}}">
+        <p class="titleMarcacaoList">{{video.titulo}}</p>
+      </mat-expansion-panel-header>
+      <img *ngIf="video.thumb" alt="{{video.titulo}}" class="imgList" routerLink="/videos/{{video.id}}"
+           src="../../../assets/thumbs/{{video.thumb}}"/>
+      <ng-container *ngFor="let marcacao of video.marcacoes">
+        <li *ngIf="marcacao.titulo" class="linkMarcacao" (click)="setCurTime(video.id, marcacao.id, marcacao.tempoInicial, marcacao.tempoFinal, getCurTime(video.id));">
+          {{video.id}} {{marcacao.titulo}} | {{marcacao.tempoInicial}} - {{marcacao.tempoFinal}}
+        </li>
+      </ng-container>
+    </mat-expansion-panel>
+  </ng-container>
+</mat-accordion>
+

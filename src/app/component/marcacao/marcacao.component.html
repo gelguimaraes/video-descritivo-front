@@ -1,0 +1,8 @@
+<div *ngIf="videoObs | async">
+<ng-container *ngFor="let marcacao of (videoObs | async)?.marcacoes; ">
+  <div *ngIf="marcacao.titulo" class="boxMarcacao boxHidden" id="marcacao_{{marcacao.id}}">
+    <p class="titleMarcacao">{{marcacao.titulo}}</p>
+    <p class="descriptionMarcacao">{{marcacao.descricao}}</p>
+   </div>
+</ng-container>
+</div>

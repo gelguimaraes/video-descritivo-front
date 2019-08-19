@@ -1,8 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {Video} from './model/video';
-import {VideoService} from './services/video.service';
-import {Pipe, PipeTransform} from '@angular/core';
-import {Observable, pipe} from 'rxjs';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -11,23 +8,12 @@ import {Observable, pipe} from 'rxjs';
 })
 export class AppComponent implements OnInit {
   title = 'video-descritivo';
-  vid: HTMLVideoElement;
-  videos: Observable<Video[]>;
-
-
-  constructor(private videoService: VideoService) {
+  constructor(private router: Router) {
   }
 
   ngOnInit() {
-    this.vid = document.getElementById('myVideo').parentElement as HTMLVideoElement;
-    this.videos = this.videoService.getVideos();
+
   }
 
-  getCurTime() {
-    alert(this.vid.currentTime);
-  }
 
-  setCurTime() {
-    this.vid.currentTime = 5;
-  }
 }
