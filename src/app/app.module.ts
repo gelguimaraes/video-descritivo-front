@@ -7,6 +7,7 @@ import {ConfigService} from './services/config.service';
 import {VideoService} from './services/video.service';
 import {VideoModule} from './module/video/video.module';
 import {AppRoutingModule} from './app-routing.module';
+import {FirestoreModule} from './module/firestore/firestore.module';
 
 
 
@@ -19,6 +20,7 @@ import {AppRoutingModule} from './app-routing.module';
     BrowserAnimationsModule,
     HttpClientModule,
     VideoModule,
+    FirestoreModule,
     AppRoutingModule
   ],
   providers: [ConfigService, VideoService, AppRoutingModule],

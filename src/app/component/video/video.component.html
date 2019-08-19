@@ -1,8 +1,8 @@
-<div *ngIf="video">
-  <p class="titleVideo" >{{video.titulo}}</p>
-  <video (timeupdate)="setCurrentTime($event)"
-         controls src="../../../assets/videos/{{video.path}}"
-         type="video/mp4" id="video_{{video.id}}" autoplay
+<div *ngIf="videoObs | async">
+  <p class="titleVideo" >{{(videoObs | async)?.titulo}}</p>
+  <video (timeupdate)="setCurrentTime($event, videoObs)"
+         controls src="../../../assets/videos/{{(videoObs | async)?.path}}"
+         type="video/mp4" id="video_{{(videoObs | async)?.id}}" autoplay
          width="100%" height="100%"></video>
 </div>
 <app-marcacao></app-marcacao>

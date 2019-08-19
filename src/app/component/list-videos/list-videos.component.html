@@ -8,7 +8,7 @@
            src="../../../assets/thumbs/{{video.thumb}}"/>
       <ng-container *ngFor="let marcacao of video.marcacoes">
         <li *ngIf="marcacao.titulo" class="linkMarcacao" (click)="setCurTime(video.id, marcacao.id, marcacao.tempoInicial, marcacao.tempoFinal, getCurTime(video.id));">
-          {{video.id}} {{marcacao.titulo}} | {{marcacao.tempoInicial}} - {{marcacao.tempoFinal}}
+          {{marcacao.titulo}} | {{marcacao.tempoInicial}} - {{marcacao.tempoFinal}}
         </li>
       </ng-container>
     </mat-expansion-panel>

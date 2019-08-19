@@ -29,15 +29,14 @@ export class VideoComponent implements OnInit {
         if (idVideo === 0 || isNaN(idVideo)) {
           idVideo = 1;
         }
-        this.videoService.getVideo(idVideo).toPromise().then(value => {
-          this.video = value;
-        });
+        this.videoObs = this.videoService.getVideo(idVideo);
       }
     );
   }
 
-  setCurrentTime(time, id) {
+  setCurrentTime(time, video: Observable<Video>) {
     this.currentTime = time.target.currentTime;
+    video.subscribe(v => console.log(this.currentTime, v.id));
   }
 }
 

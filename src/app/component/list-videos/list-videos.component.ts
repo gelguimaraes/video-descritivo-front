@@ -37,6 +37,7 @@ export class ListVideosComponent implements OnInit {
     const box = document.getElementsByClassName('boxMarcacao');
     // tslint:disable-next-line:prefer-for-of
     for (let i = 0; i < box.length; i++) {
+      // @ts-ignore
       box[i].style.display = 'none';
     }
     document.getElementById('marcacao_' + idMarcacao).style.display = 'block';
